@@ -29,7 +29,7 @@
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/你的用户名/dish-selector.git
+git clone https://github.com/Xzyery/dish-selector.git
 cd dish-selector
 ```
 
@@ -90,4 +90,4 @@ dish-selector/
 
 
 ## 贡献
-XZY
+Zhiying Xiao
