@@ -247,7 +247,7 @@ class CustomerApp:
             img = Image.open(full_path)
             img = img.convert('RGB')
             # 增大预览图片尺寸，让菜品清晰可见
-            img.thumbnail((500, 550), Image.Resampling.LANCZOS)  # 大幅增加图片尺寸
+            img.thumbnail((300, 400), Image.Resampling.LANCZOS)  # 大幅增加图片尺寸
             
             # 确保在主线程中创建PhotoImage
             self.root.after_idle(lambda: self._update_preview_image(img))
@@ -391,4 +391,5 @@ class CustomerApp:
         if unique_dishes > 0:
             info_text += "\n(点击列表项可选中，然后点击删除按钮)"
         
+
         self.cart_info_label.config(text=info_text)
