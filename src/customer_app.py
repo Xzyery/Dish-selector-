@@ -247,7 +247,7 @@ class CustomerApp:
             img = Image.open(full_path)
             img = img.convert('RGB')
             # 增大预览图片尺寸，让菜品清晰可见
-            img.thumbnail((300, 400), Image.Resampling.LANCZOS)  # 大幅增加图片尺寸
+            img.thumbnail((200, 300), Image.Resampling.LANCZOS)  # 大幅增加图片尺寸
             
             # 确保在主线程中创建PhotoImage
             self.root.after_idle(lambda: self._update_preview_image(img))
@@ -393,3 +393,4 @@ class CustomerApp:
         
 
         self.cart_info_label.config(text=info_text)
+
